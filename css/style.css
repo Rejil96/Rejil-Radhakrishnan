@@ -94,7 +94,7 @@ body a:hover{
     padding-top: 1em;
 }
 .banner-left img {
-    width: 100%;
+	width: 100%;
 }
 /*-- more buttons --*/ 
 .hire-w3lgrids {
@@ -431,11 +431,11 @@ h3.w3l-title:before, h3.w3l-title:after {
 }
 h3.w3l-title:before {
     background: #000;
-    width: 26%;
+    width: 0%;
 }
 h3.w3l-title:after {
     background: #f5810b;
-    width: 3%;
+    width: 0%;
     left: 44.9%;
 }
 /*--slider--*/
@@ -1349,12 +1349,12 @@ a.accordion-section-title span {
 }
 @media(max-width: 1366px){
 	#menuToggle {
-		right: 17%;
+		right: 18px;
 	}
 }
 @media(max-width: 1280px){
 	#menuToggle {
-		right:19%;
+		right:18px;
 	}
 	.banner-text h2 span {
 		font-size: 1.3em;
@@ -1429,7 +1429,7 @@ a.accordion-section-title span {
 }
 @media(max-width: 1050px){
 	#menuToggle {
-		right: 22%;
+		right: 18px;
 	}
 }
 @media(max-width: 1024px){
@@ -1472,10 +1472,10 @@ a.accordion-section-title span {
 	}
 	h3.w3l-title:after {
 		left: 42.2%;
-		width: 4%;
+		width: 0%;
 	}
 	h3.w3l-title:before {
-		width: 8%;
+		width: 0%;
 	}
 	.agile-w3l-ab-img img {
 		width: 100%;
@@ -1836,10 +1836,10 @@ a.accordion-section-title span {
 	}
 	h3.w3l-title:after {
 		left: 41.5%;
-		width: 5%;
+		width: 0%;
 	}
 	h3.w3l-title:before {
-		width: 9%;
+		width: 0%;
 	}
 	.box2 {
 		margin: 0 7.2em;
@@ -1863,6 +1863,47 @@ a.accordion-section-title span {
 		float: none;
 		width: 100%;
 	}
+	/* image card  */
+	
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+  }
+ 
+	
+
+	.banner-left {
+		animation-name: bounce;
+		animation-duration: 1.5s;
+		animation-fill-mode: both;
+		animation-iteration-count: no-repeat;
+		background-image: linear-gradient( rgba(233, 233, 233, 0.8),rgba(164, 163, 165, 0.8), rgba(223, 212, 212, 0.4));
+		max-width: 170px;
+		max-height: 170px;
+		background-color: rgb(24, 23, 23);
+		box-shadow: 0px 0px 25px rgba(223, 212, 212, 0.1);
+		background-position: center;
+		overflow: hidden;
+		position: relative;
+		margin-left:28%;
+		margin-top:10px;
+		margin-bottom:-10px;
+		cursor: pointer;
+		border-radius: 50%;
+	}
+	.banner-left:hover img {
+		filter: grayscale(70%);
+	}
+	
+	.banner-left img {
+		
+		transition: all linear 0.25s;
+	}
+	
+
+
+	/* image card end here */
 	.banner-text {
 		float: none;
 		width: 100%;
@@ -1890,10 +1931,10 @@ a.accordion-section-title span {
 	}
 	h3.w3l-title:after {
 		left: 39.8%;
-		width: 6%;
+		width: 0%;
 	}
 	h3.w3l-title:before {
-		width: 11%;
+		width: 0%;
 	}
 	.w3ls-agile-left {
 		padding: 1em 2em 2.5em;
@@ -1990,6 +2031,45 @@ a.accordion-section-title span {
 	}
 }
 @media(max-width: 440px){
+
+	
+	@keyframes bounce {
+		0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+		40% {transform: translateY(-30px);}
+		60% {transform: translateY(-15px);}
+	  }
+	 
+		
+	
+		.banner-left {
+			animation-name: bounce;
+			animation-duration: 1.5s;
+			animation-fill-mode: both;
+			animation-iteration-count: no-repeat;
+			background-image: linear-gradient( rgba(233, 233, 233, 0.8),rgba(164, 163, 165, 0.8), rgba(223, 212, 212, 0.4));
+			max-width: 170px;
+			max-height: 170px;
+			background-color: rgb(24, 23, 23);
+			box-shadow: 0px 0px 25px rgba(223, 212, 212, 0.1);
+			background-position: center;
+			overflow: hidden;
+			position: relative;
+			margin-left:28%;
+			margin-top:10px;
+			margin-bottom:-10px;
+			cursor: pointer;
+			border-radius: 50%;
+		}
+		.banner-left:hover img {
+			filter: grayscale(70%);
+		}
+		
+		.banner-left img {
+			
+			transition: all linear 0.25s;
+		}	
+
+
 	h3.w3l-title:after {
 		left: 38.8%;
 	}
@@ -2019,6 +2099,47 @@ a.accordion-section-title span {
 	}
 }
 @media(max-width: 414px){
+	
+	@keyframes bounce {
+		0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+		40% {transform: translateY(-30px);}
+		60% {transform: translateY(-15px);}
+	  }
+	 
+		
+	
+		.banner-left {
+			animation-name: bounce;
+			animation-duration: 1.5s;
+			animation-fill-mode: both;
+			animation-iteration-count: no-repeat;
+			background-image: linear-gradient( rgba(233, 233, 233, 0.8),rgba(164, 163, 165, 0.8), rgba(223, 212, 212, 0.4));
+			max-width: 170px;
+			max-height: 170px;
+			background-color: rgb(24, 23, 23);
+			box-shadow: 0px 0px 25px rgba(223, 212, 212, 0.1);
+			background-position: center;
+			overflow: hidden;
+			position: relative;
+			margin-left:28%;
+			margin-top:10px;
+			margin-bottom:-10px;
+			cursor: pointer;
+			border-radius: 50%;
+		}
+		.banner-left:hover img {
+			filter: grayscale(70%);
+		}
+		
+		.banner-left img {
+			
+			transition: all linear 0.25s;
+		}
+		
+	
+	
+
+
 	h3.w3l-title:after {
 		left: 37.5%;
 	}
@@ -2081,8 +2202,50 @@ a.accordion-section-title span {
 	}
 }
 @media(max-width: 384px){
+
+
+
+		
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+  }
+ 
+	
+
+	.banner-left {
+		animation-name: bounce;
+		animation-duration: 1.5s;
+		animation-fill-mode: both;
+		animation-iteration-count: no-repeat;
+		background-image: linear-gradient( rgba(233, 233, 233, 0.8),rgba(164, 163, 165, 0.8), rgba(223, 212, 212, 0.4));
+		max-width: 170px;
+		max-height: 170px;
+		background-color: rgb(24, 23, 23);
+		box-shadow: 0px 0px 25px rgba(223, 212, 212, 0.1);
+		background-position: center;
+		overflow: hidden;
+		position: relative;
+		margin-left:28%;
+		margin-top:10px;
+		margin-bottom:-10px;
+		cursor: pointer;
+		border-radius: 50%;
+	}
+	.banner-left:hover img {
+		filter: grayscale(70%);
+	}
+	
+	.banner-left img {
+		
+		transition: all linear 0.25s;
+	}
+	
+
+
 	h3.w3l-title:before {
-		width: 13%;
+		width: 0%;
 	}
 	.w3ls-agile-left-info {
 		padding: .9em 0;
@@ -2137,11 +2300,51 @@ a.accordion-section-title span {
 	}
 }
 @media(max-width: 375px){
+	
+	@keyframes bounce {
+		0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+		40% {transform: translateY(-30px);}
+		60% {transform: translateY(-15px);}
+	  }
+	 
+		
+	
+		.banner-left {
+			animation-name: bounce;
+			animation-duration: 1.5s;
+			animation-fill-mode: both;
+			animation-iteration-count: no-repeat;
+			background-image: linear-gradient( rgba(233, 233, 233, 0.8),rgba(164, 163, 165, 0.8), rgba(223, 212, 212, 0.4));
+			max-width: 170px;
+			max-height: 170px;
+			background-color: rgb(24, 23, 23);
+			box-shadow: 0px 0px 25px rgba(223, 212, 212, 0.1);
+			background-position: center;
+			overflow: hidden;
+			position: relative;
+			margin-left:28%;
+			margin-top:10px;
+			margin-bottom:-10px;
+			cursor: pointer;
+			border-radius: 50%;
+		}
+		.banner-left:hover img {
+			filter: grayscale(70%);
+		}
+		
+		.banner-left img {
+			
+			transition: all linear 0.25s;
+		}
+		
+	
+	
+
 	.banner-text {
 		padding: 2em 0 4em;
 	}
 	h3.w3l-title:before {
-		width: 14%;
+		width: 0%;
 	}
 	.box2 {
 		margin: 0 2em;
@@ -2160,6 +2363,10 @@ a.accordion-section-title span {
 	}
 	.logo h1 {
 		font-size: 2.2em;
+	}
+	.banner-left{
+		width:100px;
+		height:300px;
 	}
 	.banner-text p:before {
 		right: 18%;
@@ -2265,4 +2472,5 @@ a.accordion-section-title span {
 		padding: 2em 0em;
 	}
 }
+
 /*--//responsive--*/
