@@ -25,6 +25,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--//ajax library-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!---!ajax library-->
+<!--//sweet alert-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!--!sweet alert-->
 </head>
 <body> 
 <!-- banner -->
@@ -700,9 +703,18 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			data:$("#submit-form").serialize(),
 			method:"post",
 			success:function (response){
-				alert("<a class="btn btn-info>Thanks for contacting</a>")
-				window.location.reload()
-				//window.location.href="https://google.com"
+				//sweet alert function
+			swal({
+					title: "Good job!",
+					text: "Message sent successfully!",
+					icon: "success",
+					button: "Ok",  
+					})
+					.then(function(){
+						location.reload();
+				});
+				//!!!sweet alert function
+			
 			},
 			error:function (err){
 				alert("Something Error")
