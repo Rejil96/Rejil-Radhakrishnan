@@ -21,6 +21,10 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="//fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&amp;subset=latin-ext" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
 <!-- //online-fonts -->
+
+<!--//ajax library-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!---!ajax library-->
 </head>
 <body> 
 <!-- banner -->
@@ -492,7 +496,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<div class="col-md-6 address-left wow agile fadeInLeft animated" data-wow-delay=".5s">
 				<div class="address-grid">
 					<h4 class="wow fadeIndown animated" data-wow-delay=".5s">Get In Touch</h4>
-					<form action="#" method="post">
+					<form id = "submit-form" action="" >
 						<input type="text" placeholder="Name" name="name" required="">
 						<input type="email" placeholder="Email" name="email" required="">
 						<input type="text" placeholder="Subject" name="subject" required="">
@@ -686,6 +690,28 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script src="js/SmoothScroll.min.js"></script>
 <!-- //smooth scrolling -->
 <!-- //js-scripts -->
+
+<!-- //Contact form submitting script-->
+<script>
+	$("#submit-form").submit((e)=>{
+		e.preventDefault()
+		$.ajax({
+			url:"https://script.google.com/macros/s/AKfycbyeAt1eyYWSkOCf6-o-5pcSJAt64FlIsIPkeF6Itw/exec",
+			data:$("#submit-form").serialize(),
+			method:"post",
+			success:function (response){
+				alert("Form submitted successfully")
+				window.location.reload()
+				//window.location.href="https://google.com"
+			},
+			error:function (err){
+				alert("Something Error")
+
+			}
+		})
+	})
+</script>
+<!-- //Contact form submitting script-->
 
 </body>
 </html>
