@@ -2056,7 +2056,7 @@ a.accordion-section-title span {
 			animation-duration: 1.5s;
 			animation-fill-mode: both;
 			animation-iteration-count: no-repeat;
-			background-image: linear-gradient( rgba(233, 233, 233, 0.8),rgba(164, 163, 165, 0.8), rgba(223, 212, 212, 0.4));
+			background-image: linear-gradient( rgba(233, 233, 233, 0.8),#eeeeeee3 rgba(223, 212, 212, 0.4));
 			max-width: 170px;
 			max-height: 170px;
 			background-color: rgb(24, 23, 23);
@@ -2123,7 +2123,7 @@ a.accordion-section-title span {
 			animation-duration: 1.5s;
 			animation-fill-mode: both;
 			animation-iteration-count: no-repeat;
-			background-image: linear-gradient( rgba(233, 233, 233, 0.8),rgba(164, 163, 165, 0.8), rgba(223, 212, 212, 0.4));
+			background-image: linear-gradient( rgba(233, 233, 233, 0.8),#eeeeeee3, rgba(223, 212, 212, 0.4));
 			max-width: 170px;
 			max-height: 170px;
 			background-color: rgb(24, 23, 23);
