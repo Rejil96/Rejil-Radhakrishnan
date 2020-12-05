@@ -1125,6 +1125,16 @@ a.accordion-section-title span {
     -webkit-transform: translate3d(0,-100%,0);
     transform: translate3d(0,-100%,0);
 }
+
+.hovereffect h2 {
+    text-align: center;
+    position: relative;
+    font-size: 1.8em;
+    font-weight: 600;
+    background-color: transparent;
+    color: #ffffff;
+	padding: 2em 0 0 0;
+}
 .hovereffect p{
 	color: #FFF;
     line-height: 1.8em;
@@ -1878,7 +1888,7 @@ a.accordion-section-title span {
 		animation-duration: 1.5s;
 		animation-fill-mode: both;
 		animation-iteration-count: no-repeat;
-		background-image: linear-gradient( rgba(233, 233, 233, 0.8),rgba(164, 163, 165, 0.8), rgba(223, 212, 212, 0.4));
+		background-image: linear-gradient( rgba(233, 233, 233, 0.8),#eeeeeee3, rgba(223, 212, 212, 0.4));
 		max-width: 170px;
 		max-height: 170px;
 		background-color: rgb(24, 23, 23);
